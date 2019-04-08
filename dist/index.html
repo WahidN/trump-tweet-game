@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>trump-tweet-game</title>
+<link rel="manifest" href="manifest.22aa2bd5492f0d28ac54eeb9b3f75b70.json"><link rel="shortcut icon" href="favicon.png"></head>
+
+<body>
+    <div class="loader">...loading</div>
+    <div class="wrapper">
+        <!-- dark mode swtich from: https://codepen.io/minimaluminium/pen/xMvVvK  -->
+        <div class="dark-mode-switch">
+            <input type="checkbox" id="darkmode">
+            <label for="darkmode" class="toggle-track">
+                 <div class="toggle-moon">🌛</div>
+                <div class="toggle-sun">☀️</div>
+                <div class="toggle-thumb"></div>
+            </label>
+        </div>
+        <div class="game__wrapper">
+            <span>score: </span>
+            <span class="score"></span>
+            <div class="tweet">
+                <blockquote>
+                    <div class="tweet__header">
+                        <img src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_bigger.jpg" alt="" class="avatar">
+                        <div class="tweet__header-name">
+                            <div class="name__wrapper">
+                                <span class="name" title="Donald J. Trump">Donald J. Trump</span>
+                                <div class="icon--verified" role="img" aria-labelby="Verified Account" title="Verified Account"></div>
+                            </div>
+                            <span class="nickname">@realDonalTrump</span>
+                        </div>
+                        <div class="tweet-brand"></div>
+                    </div>
+                    <div class="tweet__content">
+                        <p>
+                            Dopey <a href="">@Lord_Sugar</a> I'm worth $8 billion and you're worth peanuts...without my
+                            show nobody would even know who you are.
+                        </p>
+                    </div>
+                    <div class="tweet__footer">
+                        <div class="tweet__info-likes">
+                            <i class="icon--heart"></i>
+                            <span class="likes"></span>
+                        </div>
+                        <div class="tweet__info-time"></div>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="btn__wrapper">
+                <button class="real btn">Real</button>
+                <button class="fake btn">Fake</button>
+            </div>
+            <button class="btn btn--newGame">New game</button>
+        </div>
+        <div class="bad-answer">
+            <img src="assets/img/bad.png" class="answerImg">
+            <h2>Fake news!</h2>
+        </div>
+        <div class="good-answer">
+            <img src="assets/img/good.png" class="answerImg">
+            <h2>Very good!</h2>
+        </div>
+    </div>
+    <noscript>Enable Javascript to play this game.<sup>Why the f is it off</sup></noscript>
+<script type="text/javascript" src="app.js"></script>
+
+
+</body></html>
