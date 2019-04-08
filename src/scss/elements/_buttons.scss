@@ -1,0 +1,30 @@
+.btn {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:focus, &:active {
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    }
+}
+
+.btn.real {
+    background-color: #27870A;
+    color: white;
+    &:hover {
+        background-color: darken(#27870A, 5%);
+    }
+}
+
+.btn.fake {
+    background-color: #BF0000;
+    color: white;
+    &:hover {
+        background-color: darken(#BF0000, 5%);
+    }
+}

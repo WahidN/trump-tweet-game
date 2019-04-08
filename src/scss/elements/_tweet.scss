@@ -1,0 +1,100 @@
+.tweet {
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.tweet__header {
+    display: flex;
+
+    .avatar {
+        border-radius: 50%;
+        height: 40px;
+        flex-basis: 36px;
+        margin-right: 10px;
+    }
+
+    .tweet__header-name {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+        align-items: flex-start;
+
+        .name__wrapper {
+            display: flex;
+
+            .name {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-right: 4px;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover {
+                    color: $twitter-color;
+                }
+            }
+        }
+
+        .nickname {
+            font-size: 16px;
+            color: #697882;
+            cursor: pointer;
+        }
+    }
+
+    .tweet-brand {
+        margin-left: auto;
+        width: 16px;
+        height: auto;
+        background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojMDNBOUY0OyIgZD0iTTUxMiw5Ny4yNDhjLTE5LjA0LDguMzUyLTM5LjMyOCwxMy44ODgtNjAuNDgsMTYuNTc2YzIxLjc2LTEyLjk5MiwzOC4zNjgtMzMuNDA4LDQ2LjE3Ni01OC4wMTYgIGMtMjAuMjg4LDEyLjA5Ni00Mi42ODgsMjAuNjQtNjYuNTYsMjUuNDA4QzQxMS44NzIsNjAuNzA0LDM4NC40MTYsNDgsMzU0LjQ2NCw0OGMtNTguMTEyLDAtMTA0Ljg5Niw0Ny4xNjgtMTA0Ljg5NiwxMDQuOTkyICBjMCw4LjMyLDAuNzA0LDE2LjMyLDIuNDMyLDIzLjkzNmMtODcuMjY0LTQuMjU2LTE2NC40OC00Ni4wOC0yMTYuMzUyLTEwOS43OTJjLTkuMDU2LDE1LjcxMi0xNC4zNjgsMzMuNjk2LTE0LjM2OCw1My4wNTYgIGMwLDM2LjM1MiwxOC43Miw2OC41NzYsNDYuNjI0LDg3LjIzMmMtMTYuODY0LTAuMzItMzMuNDA4LTUuMjE2LTQ3LjQyNC0xMi45MjhjMCwwLjMyLDAsMC43MzYsMCwxLjE1MiAgYzAsNTEuMDA4LDM2LjM4NCw5My4zNzYsODQuMDk2LDEwMy4xMzZjLTguNTQ0LDIuMzM2LTE3Ljg1NiwzLjQ1Ni0yNy41MiwzLjQ1NmMtNi43MiwwLTEzLjUwNC0wLjM4NC0xOS44NzItMS43OTIgIGMxMy42LDQxLjU2OCw1Mi4xOTIsNzIuMTI4LDk4LjA4LDczLjEyYy0zNS43MTIsMjcuOTM2LTgxLjA1Niw0NC43NjgtMTMwLjE0NCw0NC43NjhjLTguNjA4LDAtMTYuODY0LTAuMzg0LTI1LjEyLTEuNDQgIEM0Ni40OTYsNDQ2Ljg4LDEwMS42LDQ2NCwxNjEuMDI0LDQ2NGMxOTMuMTUyLDAsMjk4Ljc1Mi0xNjAsMjk4Ljc1Mi0yOTguNjg4YzAtNC42NC0wLjE2LTkuMTItMC4zODQtMTMuNTY4ICBDNDgwLjIyNCwxMzYuOTYsNDk3LjcyOCwxMTguNDk2LDUxMiw5Ny4yNDh6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+        background-size: 15px;
+        background-repeat: no-repeat;
+    }
+}
+
+.tweet__content {
+    cursor: text;
+    word-wrap: break-word;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 15px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.tweet__footer {
+    display: flex;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #697882;
+
+    .tweet__info-likes {
+        display: flex;
+        margin-right: 12px; 
+        align-items: center;
+
+        .icon--heart {
+            width: 16px;
+            display: inline-block;
+            height: 100%;
+            background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23697882%22%20d%3D%22M12%2021.638h-.014C9.403%2021.59%201.95%2014.856%201.95%208.478c0-3.064%202.525-5.754%205.403-5.754%202.29%200%203.83%201.58%204.646%202.73.813-1.148%202.353-2.73%204.644-2.73%202.88%200%205.404%202.69%205.404%205.755%200%206.375-7.454%2013.11-10.037%2013.156H12zM7.354%204.225c-2.08%200-3.903%201.988-3.903%204.255%200%205.74%207.035%2011.596%208.55%2011.658%201.52-.062%208.55-5.917%208.55-11.658%200-2.267-1.822-4.255-3.902-4.255-2.528%200-3.94%202.936-3.952%202.965-.23.562-1.156.562-1.387%200-.015-.03-1.426-2.965-3.955-2.965z%22%2F%3E%3C%2Fsvg%3E);
+            background-size: 17px;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .tweet {
+        width: 100%;
+    }
+}
+
