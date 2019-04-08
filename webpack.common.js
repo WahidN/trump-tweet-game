@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Critters = require('critters-webpack-plugin')
 const path = require("path");
 const pkg = require('./package.json');
 
@@ -42,14 +41,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [
-          {loader: "style-loader" },
-          { loader: "css-loader", options: { importLoaders: 1 } },
-          {loader: "sass-loader"}
-        ]
-      },
-      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
           {
@@ -81,7 +72,6 @@ module.exports = {
     new CopyWebpackPlugin([
       {from:'src/assets/img',to:'assets/img'} 
     ]),
-    new Critters()
   ]
 };
 
