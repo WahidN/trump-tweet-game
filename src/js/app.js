@@ -26,6 +26,8 @@ const loadTweet = () => {
         const number = randomNumber();
         const filteredTweet  = replaceStr(appState.tweets[number].tweet);
         Elements.tweetContent.innerHTML = filteredTweet;
+        Elements.tweetLikes.textContent = appState.tweets[number].likes;
+        Elements.tweetTime.textContent = appState.tweets[number].time;
         appState.activeTweet = appState.tweets[number];
     }
 }

@@ -1,9 +1,0 @@
-{
-  "name": "{{ projectname }}",
-  "short_name": "{{ projectname }}",
-  "orientation": "portrait",
-  "display": "standalone",
-  "start_url": ".",
-  "description": "PWA manifest",
-  "background_color": "#ffffff"
-}
